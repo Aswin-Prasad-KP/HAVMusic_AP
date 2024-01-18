@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+</head>
+
+<body>
+    <style>
+        body {
+            color: white;
+            background: url(images/sunrise.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        input {
+            width: 30rem;
+            height: 40px;
+            margin: 6px 2px;
+            border-radius: 20px;
+        }
+
+        input:is(.fname, .lname, .reset, .submit) {
+            width: 14.5rem;
+        }
+
+        ::placeholder {
+            padding-left: 10px;
+        }
+    </style>
+    <header>
+        <h1>My Form</h1>
+    </header>
+    <hr>
+    <main id="form" style="text-align: center;">
+        <form action="#" method="post" id="myFrom">
+            <h2>Registration Form</h2>
+            <input style="" type="text" name="user" class="user" placeholder="Username"><br>
+            <input type="text" name="fname" class="fname" placeholder="First Name">
+            <input type="text" name="lname" class="lname" placeholder="Last Name"><br>
+            <input type="email" name="email" class="email" placeholder="E-mail"><br>
+            <input type="password" name="pwd" class="pwd" placeholder="Password"><br>
+            <input type="password" name="cpwd" class="cpwd" placeholder="Confirm Password"><br>
+            <input type="number" min="1000000000" max="9999999999" name="phno" class="phno"
+                placeholder="Phone Number"><br>
+            <input type="email" name="email" class="email" placeholder="E-mail"><br>
+            <input type="reset" value="Clear" class="reset">
+            <input type="submit" value="Submit" class="submit">
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <p>Developed by <i>Anonymous</i></p>
+    </footer>
+</body>
+
+</html>
