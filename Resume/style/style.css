@@ -1,0 +1,29 @@
+h4, h5, h3 {
+    margin: 10px auto;
+}
+:is(main, footer) h4 {
+    background: rgb(218, 228, 242);
+}
+
+p {
+    margin: 0;
+}
+
+#header-container {
+   
+}
+
+#header-container .logo {
+    width: 100px;
+    float: left;
+    margin: 0% 5%;
+}
+
+#header-container .header-content {
+    text-align: center;
+}
+
+.header-content .details {
+    display: grid;
+    align-content: space-between;
+}
