@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <main>
+        <div id="form-container">
+            <h1>Student Registration Form</h1>
+            <form action="#" method="post">
+                <div id="name">
+                    <label for="fname">First Name : </label>
+                    <input type="text" name="fname" id="fname" placeholder="Tony" pattern="\b([A-Z][-,a-z. ']+[ ]*)+"
+                        required>
+                    <label for="lname">Last Name : </label>
+                    <input type="text" name="lname" id="lname" placeholder="Stark" pattern="\b([A-Z][-,a-z. ']+[ ]*)+"
+                        required>
+                </div>
+                <div>
+                    <label for="phone">Phone No. : </label>
+                    <input type="tel" name="phone" id="phone" placeholder="9876543210" pattern="[0-9]{10}" size="10"
+                        required>
+                </div>
+                <div>
+                    <label for="gender">Gender : </label><br>
+                    <input type="radio" name="gender" id="male" value="male" required> Male <br>
+                    <input type="radio" name="gender" id="female" value="female"> Female <br>
+                    <input type="radio" name="gender" id="other" value="other" checked> Other
+                </div>
+                <div>
+                    <label for="addr">Address : </label>
+                    <textarea name="addr" id="addr" cols="30" rows="10" required></textarea>
+                </div>
+                <div>
+                    <label for="dept">Department : </label>
+                    <select name="dept" id="dept" required>
+                        <option value="" disabled selected>---Department---</option>
+                        <option value="cse">CSE</option>
+                        <option value="it">IT</option>
+                        <option value="eee">EEE</option>
+                        <option value="ece">ECE</option>
+                        <option value="mech">Mechanical</option>
+                        <option value="civil">Civil</option>
+                        <option value="arch">Architecture</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="someone@mail.com"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                </div>
+                <div>
+                    <label for="pass">Password : </label>
+                    <input type="password" name="pass" id="pass" placeholder="********"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#%^&*(){};:/?,.<>\|`~]).{8,}" required>
+                </div>
+                <div>
+                    <label for="cpass">Confirm Password : </label>
+                    <input type="password" name="cpass" id="cpass" placeholder="********"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#%^&*(){};:/?,.<>\|`~]).{8,}" required>
+                </div>
+                <div id="validate">
+                    <input id="submit" name="submit" type="submit" value="Register">
+                    <input id="clear" type="reset" value="Clear">
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
