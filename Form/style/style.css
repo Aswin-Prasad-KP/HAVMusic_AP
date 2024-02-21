@@ -82,12 +82,22 @@ input[type="radio"] {
 #validate > #submit {
     border: 1px solid rgb(1, 54, 1);
     background-color: rgba(0, 255, 0, 0.7);
+    transition: all .7s;
+}
+
+#validate > #submit:hover {
+    box-shadow: 1px 1px 20px 1px rgba(0, 255, 0, 0.7);
 }
 
 #validate > #clear {
     border: 1px solid rgb(1, 1, 54);
     background-color: rgba(0, 0, 255, 0.7);
     color: white;
+    transition: all .7s;
+}
+
+#validate > #clear:hover {
+    box-shadow: 1px 1px 20px 1px rgba(0, 0, 255, 0.7);
 }
 
 :is(input, textarea, select):valid {
@@ -101,3 +111,4 @@ input[type="radio"] {
 :is(input, textarea, select):focus {
     outline: none;
 }
+
